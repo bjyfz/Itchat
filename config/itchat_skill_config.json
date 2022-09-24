@@ -1,0 +1,16 @@
+{
+  "data_dir": "/Users/baojiang/project/itchat/data",
+  "hnsw": {
+    "space": "cosine",
+    "dim": 768,
+    "index_name": "itchat_index"
+  },
+  "bert": {
+    "model_type": "bert",
+    "task_name": "afqmc",
+    "model_dir": "/Users/baojiang/project/itchat/pretrain_model/chinese-bert-wwm-ext/",
+    "do_lower_case": true,
+    "max_seq_length": 128,
+    "pred_batch_size": 16
+    }
+}

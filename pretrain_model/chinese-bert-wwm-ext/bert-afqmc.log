@@ -1,0 +1,1575 @@
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Creating features from dataset file at /Users/baojiang/project/itchat/src/../data/afqmc/
+Writing example 0
+*** Example ***
+guid: test-0
+input_ids: 101 955 1446 784 720 3198 952 833 1357 3867 102 6010 6009 955 1446 784 720 3198 952 1377 809 2612 1908 115 115 115 702 3299 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 29
+*** Example ***
+guid: test-1
+input_ids: 101 5381 1555 6587 2582 720 6760 1359 2768 955 1446 102 1963 862 2199 5381 1555 6587 1147 2940 711 955 1446 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 24
+*** Example ***
+guid: test-2
+input_ids: 101 2769 4638 955 1446 711 1567 2458 6858 679 749 102 2769 2582 720 3766 3791 2458 6858 955 1446 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 22
+*** Example ***
+guid: test-3
+input_ids: 101 6010 6009 955 1446 7583 2428 2582 720 679 3227 4850 749 102 6010 6009 955 1446 7583 2428 679 3227 4850 749 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 25
+*** Example ***
+guid: test-4
+input_ids: 101 2769 4638 955 1446 3766 4500 5314 1068 7308 749 102 2828 2769 4638 955 1446 1068 749 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 20
+Saving features into cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_test_chinese-bert-wwm-ext_128_afqmc
+******** Running prediction  ********
+  Num examples = 5
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Loading features from cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_test_chinese-bert-wwm-ext_128_afqmc
+******** Running prediction  ********
+  Num examples = 5
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Loading features from cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_test_chinese-bert-wwm-ext_128_afqmc
+******** Running prediction  ********
+  Num examples = 5
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Loading features from cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_test_chinese-bert-wwm-ext_128_afqmc
+******** Running representation  ********
+  Num examples = 5
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Loading features from cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_test_chinese-bert-wwm-ext_128_afqmc
+******** Running representation  ********
+  Num examples = 5
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Loading features from cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_test_chinese-bert-wwm-ext_128_afqmc
+******** Running representation  ********
+  Num examples = 5
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Creating features from dataset file at /Users/baojiang/project/itchat/src/../data/afqmc/
+Writing example 0
+*** Example ***
+guid: test-0
+input_ids: 101 955 1446 784 720 3198 952 833 1357 3867 102 6010 6009 955 1446 784 720 3198 952 1377 809 2612 1908 115 115 115 702 3299 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 29
+*** Example ***
+guid: test-1
+input_ids: 101 5381 1555 6587 2582 720 6760 1359 2768 955 1446 102 1963 862 2199 5381 1555 6587 1147 2940 711 955 1446 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 24
+*** Example ***
+guid: test-2
+input_ids: 101 2769 4638 955 1446 711 1567 2458 6858 679 749 102 2769 2582 720 3766 3791 2458 6858 955 1446 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 22
+*** Example ***
+guid: test-3
+input_ids: 101 6010 6009 955 1446 7583 2428 2582 720 679 3227 4850 749 102 6010 6009 955 1446 7583 2428 679 3227 4850 749 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 25
+*** Example ***
+guid: test-4
+input_ids: 101 2769 4638 955 1446 3766 4500 5314 1068 7308 749 102 2828 2769 4638 955 1446 1068 749 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 20
+Saving features into cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_run_case_chinese-bert-wwm-ext_128_afqmc
+******** Running representation  ********
+  Num examples = 5
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Creating features from dataset file at /Users/baojiang/project/itchat/src/../data/afqmc/
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Creating features from dataset file at /Users/baojiang/project/itchat/src/../data/afqmc/
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Creating features from dataset file at /Users/baojiang/project/itchat/src/../data/afqmc/
+Writing example 0
+*** Example ***
+guid: run_case-0
+input_ids: 101 955 1446 784 720 3198 952 833 1357 3867 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 11
+Saving features into cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_run_case_chinese-bert-wwm-ext_128_afqmc
+******** Running representation  ********
+  Num examples = 1
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Creating features from dataset file at /Users/baojiang/project/itchat/src/../data/afqmc/
+Writing example 0
+*** Example ***
+guid: run_case-0
+input_ids: 101 955 1446 784 720 3198 952 833 1357 3867 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 11
+Saving features into cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_run_case_chinese-bert-wwm-ext_128_afqmc
+******** Running representation  ********
+  Num examples = 1
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Creating features from dataset file at /Users/baojiang/project/itchat/src/../data/afqmc/
+Writing example 0
+*** Example ***
+guid: run_case-0
+input_ids: 101 955 1446 784 720 3198 952 833 1357 3867 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 11
+Saving features into cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_run_case_chinese-bert-wwm-ext_128_afqmc
+******** Running representation  ********
+  Num examples = 1
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Creating features from dataset file at /Users/baojiang/project/itchat/src/../data/afqmc/
+Writing example 0
+*** Example ***
+guid: run_case-0
+input_ids: 101 955 1446 784 720 3198 952 833 1357 3867 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 11
+Saving features into cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_run_case_chinese-bert-wwm-ext_128_afqmc
+******** Running representation  ********
+  Num examples = 1
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=True, do_repre=False, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Creating features from dataset file at /Users/baojiang/project/itchat/src/../data/afqmc/
+Writing example 0
+*** Example ***
+guid: test-0
+input_ids: 101 955 1446 784 720 3198 952 833 1357 3867 102 6010 6009 955 1446 784 720 3198 952 1377 809 2612 1908 115 115 115 702 3299 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 29
+*** Example ***
+guid: test-1
+input_ids: 101 5381 1555 6587 2582 720 6760 1359 2768 955 1446 102 1963 862 2199 5381 1555 6587 1147 2940 711 955 1446 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 24
+*** Example ***
+guid: test-2
+input_ids: 101 2769 4638 955 1446 711 1567 2458 6858 679 749 102 2769 2582 720 3766 3791 2458 6858 955 1446 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 22
+*** Example ***
+guid: test-3
+input_ids: 101 6010 6009 955 1446 7583 2428 2582 720 679 3227 4850 749 102 6010 6009 955 1446 7583 2428 679 3227 4850 749 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 25
+*** Example ***
+guid: test-4
+input_ids: 101 2769 4638 955 1446 3766 4500 5314 1068 7308 749 102 2828 2769 4638 955 1446 1068 749 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 20
+Saving features into cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_test_chinese-bert-wwm-ext_128_afqmc
+******** Running prediction  ********
+  Num examples = 5
+  Batch size = 16
+Process rank: -1, device: mps, n_gpu: 0, distributed training: False, 16-bits training: False
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Training/evaluation parameters Namespace(data_dir='/Users/baojiang/project/itchat/src/../data/afqmc/', model_type='bert', model_name_or_path='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', task_name='afqmc', output_dir='/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext', config_name='', tokenizer_name='', cache_dir='', max_seq_length=128, do_train=False, do_eval=False, do_predict=False, do_repre=True, do_lower_case=True, per_gpu_train_batch_size=16, per_gpu_eval_batch_size=16, gradient_accumulation_steps=1, learning_rate=2e-05, weight_decay=0.01, adam_epsilon=1e-08, max_grad_norm=1.0, num_train_epochs=3.0, max_steps=-1, warmup_proportion=0.1, logging_steps=2146, save_steps=2146, eval_all_checkpoints=False, predict_checkpoints=0, no_cuda=False, overwrite_output_dir=True, overwrite_cache=False, seed=42, fp16=False, fp16_opt_level='O1', local_rank=-1, server_ip='', server_port='', n_gpu=0, device=device(type='mps'), output_mode='classification')
+Model name '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming '/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext' is a path or url to a directory containing tokenizer files.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/added_tokens.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/special_tokens_map.json. We won't load it.
+Didn't find file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/tokenizer_config.json. We won't load it.
+loading file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/vocab.txt
+loading file None
+loading file None
+loading file None
+Predict the following checkpoints: ['/Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext']
+loading configuration file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/config.json
+Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "finetuning_task": "afqmc",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 21128
+}
+
+loading weights file /Users/baojiang/project/itchat/src/../pretrain_model/chinese-bert-wwm-ext/pytorch_model.bin
+Creating features from dataset file at /Users/baojiang/project/itchat/src/../data/afqmc/
+Writing example 0
+*** Example ***
+guid: run_case-0
+input_ids: 101 955 1446 784 720 3198 952 833 1357 3867 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+attention_mask: 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+label: 0 (id = 0)
+input length: 11
+Saving features into cached file /Users/baojiang/project/itchat/src/../data/afqmc/cached_run_case_chinese-bert-wwm-ext_128_afqmc
+******** Running representation  ********
+  Num examples = 1
+  Batch size = 16
